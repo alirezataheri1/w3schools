@@ -1,0 +1,538 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* start color for code in example box */
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.brown {
+  color: brown;
+}
+
+/* end color for code in example box */
+
+/* start CSS for section1 until section 5 */
+
+.section {
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section .left {
+  width: 50%;
+  text-align: center;
+  padding-left: 50px;
+}
+
+.section .left .title {
+  font-size: 100px;
+  margin-top: 100px;
+}
+
+.section .left .title-description {
+  font-size: 19px;
+  margin-top: 13px;
+}
+
+/* */
+
+.section .right {
+  width: 50%;
+  padding: 80px 0 0 35px;
+}
+
+.section .right .container {
+  width: 90%;
+  height: 440px;
+  background-color: #e7e9eb;
+  border-radius: 5px;
+  padding: 25px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.section .right .container h3 {
+  font-size: 24px;
+}
+
+.section .right .container .example {
+  width: 90%;
+  height: 295px;
+  margin-top: 17px;
+  background-color: #fff;
+  border-left: 4px solid #04aa6d;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.section .right .container .try-buttom {
+  width: 200px;
+  display: block;
+  color: #fff;
+  background-color: #04aa6d;
+  font-size: 18px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.section .right .container .try-buttom:hover {
+  background-color: #059862;
+}
+
+.button {
+  display: block;
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 10px 0;
+  width: 200px;
+  border-radius: 30px;
+}
+
+.button.learn {
+  color: #fff;
+  background-color: #04aa6d;
+}
+
+.button.learn:hover {
+  background-color: #059862;
+}
+
+.button.video {
+  background-color: #fff4a3;
+}
+
+.button.video:hover {
+  background-color: #fff294;
+}
+
+.button.reference {
+  color: #fff;
+  background-color: #282a35;
+}
+
+.button.html:hover {
+  background-color: #000;
+}
+
+.button.get {
+  background-color: #ffc0c7;
+}
+
+.button.get:hover {
+  background-color: #faafb7;
+}
+
+/* end CSS for section1 until section 5  */
+
+/* start header section */
+
+#header {
+  height: 75px;
+  display: flex;
+}
+
+#header .left {
+  width: 40%;
+  display: flex;
+}
+
+#header .left .logo {
+  width: 14%;
+  padding: 12px 0 0 23px;
+}
+
+#header .left .menu {
+  width: 88%;
+}
+
+#header .left .menu .navigation-bar {
+  display: flex;
+  line-height: 75px;
+}
+
+#header .left .menu .navigation-bar .navigation-list a {
+  font-size: 18px;
+  padding: 28px 18px;
+}
+
+#header .left .menu .navigation-bar .navigation-list a:hover {
+  color: #fff;
+  background-color: #04aa6d;
+}
+
+/*  */
+
+#header .right {
+  width: 60%;
+  display: flex;
+  position: relative;
+}
+
+#header .right .lists {
+  position: absolute;
+  right: 0;
+}
+
+#header .right .icons {
+  position: absolute;
+  right: 520px;
+}
+
+#header .right .icons i {
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+  padding-top: 30px;
+}
+
+#header .right .navigation-bar {
+  display: flex;
+  text-align: center;
+  line-height: 75px;
+}
+
+#header .right .navigation-bar .navigation-list a {
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin: 0 5px 0 10px;
+}
+
+#header .right .navigation-bar .navigation-list .pro {
+  color: #fff;
+  background-color: #000;
+}
+
+#header .right .navigation-bar .navigation-list .pro:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+}
+
+#header .right .navigation-bar .navigation-list .get {
+  background-color: #ffc0c7;
+}
+
+#header .right .navigation-bar .navigation-list .get:hover {
+  background-color: #faafb7;
+  text-decoration: underline;
+}
+
+#header .right .navigation-bar .navigation-list .free {
+  background-color: #fff4a3;
+}
+
+#header .right .navigation-bar .navigation-list .free:hover {
+  background-color: #fff294;
+  text-decoration: underline;
+}
+
+#header .right .navigation-bar .navigation-list .log {
+  color: #fff;
+  background-color: #04aa6d;
+  padding-inline: 40px;
+}
+
+#header .right .navigation-bar .navigation-list .log:hover {
+  background-color: #059862;
+  text-decoration: underline;
+}
+
+/* End header section */
+
+/* start search section */
+
+#search {
+  height: 550px;
+  background-color: #282a35;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#search .site-title {
+  color: #fff;
+  font-size: 70px;
+  margin-bottom: 22px;
+}
+
+#search .site-description {
+  color: #ffc0c7;
+  font-size: 23px;
+}
+
+#search .search-input {
+  width: 400px;
+  height: 50px;
+  margin: 35px auto 30px;
+  border-radius: 25px 0 0 25px;
+  font-size: 17px;
+  padding-left: 25px;
+  outline: 0;
+}
+
+#search .search-button {
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #04aa6d;
+  border-radius: 0 25px 25px 0;
+  margin: 35px 0 30px;
+  padding: 12px;
+}
+
+#search .search-button:hover {
+  background-color: #059862;
+}
+
+#search .search-button .fa-solid.fa-magnifying-glass {
+  font-size: 20px;
+  color: #fff;
+}
+
+#search .guide {
+  display: block;
+  color: #fff;
+  font-size: 23px;
+  text-decoration: underline;
+}
+
+#search .guide:hover {
+  color: #059862;
+}
+
+/* End search section */
+
+/* start section1 */
+
+.section1 {
+  background-color: #d9eee1;
+}
+
+/* end section1 */
+
+/* start section2 */
+
+.section2 {
+  background-color: #fff4a3;
+}
+
+/* end section2 */
+
+/* start section3 */
+
+.section3 {
+  background-color: #282a35;
+}
+
+.section3 .left .title {
+  color: #fff;
+}
+
+.section3 .left .title-description {
+  color: #fff;
+}
+
+.section3 .button.reference {
+  color: #000;
+  background-color: #e7e9eb;
+}
+
+.section3 .button.html:hover {
+  background-color: #d7d9db;
+}
+
+/* end section3 */
+
+/* start section4 */
+
+.section4 {
+  background-color: #f3ecea;
+}
+
+/* end section4 */
+
+/* start section5 */
+
+.section5 {
+  background-color: #96d4d4;
+}
+
+/* end section5 */
+
+/* start risponsive for section1 -  section5*/
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1200px;
+  }
+  .section .left {
+    width: 100%;
+    padding-left: 0;
+  }
+  .section .right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .section .right .container {
+    margin: auto;
+  }
+}
+
+/* start section6 */
+
+.section6 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 1000px;
+  background-color: #282a35;
+  padding: 55px 100px 0 100px;
+  text-align: center;
+}
+
+.section6 .left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.section6 .left .box {
+  width: 93.5%;
+  height: 260px;
+  background-color: white;
+  margin: 27px 0;
+  border-radius: 5px;
+}
+
+.section6 .left .box1 {
+  background-color: #ffc0c7;
+}
+
+.section6 .left .box2 {
+  background-color: #f3ecea;
+}
+
+.section6 .left .box3 {
+  background-color: #96d4d4;
+}
+
+.section6 .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.section6 .right .box {
+  width: 93.5%;
+  height: 260px;
+  background-color: white;
+  margin: 27px 0;
+  border-radius: 5px;
+}
+
+.section6 .right .box1 {
+  background-color: #fff4a3;
+}
+
+.section6 .right .box2 {
+  background-color: #d9eee1;
+}
+
+.section6 .right .box3 {
+  background-color: #e7e9eb;
+}
+
+.section6 .title {
+  margin-top: 40px;
+  font-size: 45px;
+}
+
+.section6 .title-description {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #3a3a3a;
+}
+
+.section6 .button {
+  display: block;
+  width: 200px;
+  margin: 45px auto;
+  padding: 12px 20px;
+  background-color: antiquewhite;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #fff;
+  background-color: #282a35;
+}
+
+.section6 .button:hover {
+  background-color: #000;
+}
+
+/* start risponsive for header*/
+
+@media only screen and (max-width: 1000px) {
+  .section6 {
+    height: 2000px;
+    padding: 55px 0 0 0;
+  }
+  .section6 .left {
+    width: 100%;
+    align-items: center;
+  }
+  .section6 .right {
+    width: 100%;
+    align-items: center;
+  }
+}
+
+/* end risponsive header */
+
+/* start risponsive for section6*/
+
+@media only screen and (max-width: 1330px) {
+  #header {
+    flex-direction: column;
+    height: 150px;
+  }
+  #header .right {
+    width: 100%;
+  }
+  #header .left {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #header {
+    display: none;
+  }
+}
+
+/* end risponsive section6 */
